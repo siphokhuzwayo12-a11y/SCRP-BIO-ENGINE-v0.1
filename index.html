@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCRP BIO-ENGINE v0.1 - Main Dispatch Hub</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            color: #58a6ff;
+            margin-top: 0;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 15px;
+            font-size: 24px;
+        }
+        p {
+            color: #8b949e;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+        .dispatch-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+        }
+        .dispatch-card {
+            background-color: #21262d;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 16px;
+            text-decoration: none;
+            color: #f0f6fc;
+            transition: all 0.2s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .dispatch-card:hover {
+            border-color: #58a6ff;
+            transform: translateY(-2px);
+            background-color: #262c36;
+        }
+        .title {
+            font-weight: 600;
+            font-size: 15px;
+            color: #58a6ff;
+            margin-bottom: 8px;
+        }
+        .filename {
+            font-size: 12px;
+            font-family: monospace;
+            color: #8b949e;
+        }
+        .tag {
+            display: inline-block;
+            margin-top: 12px;
+            font-size: 11px;
+            padding: 2px 8px;
+            background-color: rgba(56, 139, 253, 0.15);
+            color: #58a6ff;
+            border-radius: 12px;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>SCRP BIO-ENGINE v0.1 Dispatch Hub</h1>
+    <p>Select a module standard specification below to open the dispatch view directly.</p>
+
+    <div class="dispatch-grid">
+        <a href="master_specification_matrix.html" class="dispatch-card">
+            <div>
+                <div class="title">Master Specification Matrix</div>
+                <div class="filename">master_specification_matrix.html</div>
+            </div>
+            <span class="tag">Master Standard</span>
+        </a>
+
+        <a href="minerals_bio_solar_srcp_marriage.html" class="dispatch-card">
+            <div>
+                <div class="title">Minerals Bio-Solar SRCP Marriage</div>
+                <div class="filename">minerals_bio_solar_srcp_marriage.html</div>
+            </div>
+            <span class="tag">System Integration</span>
+        </a>
+
+        <a href="4-pod_broiler_management_schema.html" class="dispatch-card">
+            <div>
+                <div class="title">4-Pod Broiler Management Schema</div>
+                <div class="filename">4-pod_broiler_management_schema.html</div>
+            </div>
+            <span class="tag">Broiler Management</span>
+        </a>
+
+        <a href="broiler_brooding_dispatch.html" class="dispatch-card">
+            <div>
+                <div class="title">Broiler Brooding Dispatch</div>
+                <div class="filename">broiler_brooding_dispatch.html</div>
+            </div>
+            <span class="tag">Broiler Operations</span>
+        </a>
+
+        <a href="4-pod_swine_management_schema.html" class="dispatch-card">
+            <div>
+                <div class="title">4-Pod Swine Management Schema</div>
+                <div class="filename">4-pod_swine_management_schema.html</div>
+            </div>
+            <span class="tag">Swine Management</span>
+        </a>
+
+        <a href="swine_brooding_dispatch.html" class="dispatch-card">
+            <div>
+                <div class="title">Swine Brooding Dispatch</div>
+                <div class="filename">swine_brooding_dispatch.html</div>
+            </div>
+            <span class="tag">Swine Operations</span>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
